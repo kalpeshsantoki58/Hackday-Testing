@@ -1,7 +1,8 @@
 git pull
 branch=$(git symbolic-ref --short HEAD)
-image_name='hackday-testing:'$branch
+# image_name='hackday-testing:'$branch
 c_name='hackday-testing-'$branch
+image_name=$branch':1'
 p_no=`cat port_number`
 # image_name=$brnach$suffix
 echo $image_name
